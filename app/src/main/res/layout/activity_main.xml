@@ -7,24 +7,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.severalpagestext.MainActivity">
 
-    <com.example.android.severalpagestext.BookView
+    <com.example.android.severalpagestext.BookWebView
+        android:id="@+id/bwv_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:id="@+id/sv_bookview"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp">
+        android:layout_height="match_parent"/>
 
-        <TextView
-            android:id="@+id/tv_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lorem_ipsum"/>
-    </com.example.android.severalpagestext.BookView>
-    <!--<WebView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:id="@+id/wv_book"/>-->
 </FrameLayout>

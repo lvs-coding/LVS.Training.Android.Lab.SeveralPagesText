@@ -2,15 +2,10 @@ package com.example.android.severalpagestext;
 
 import android.content.Context;
 import android.os.Handler;
-import android.text.Spanned;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.view.View;
 import android.widget.ScrollView;
-import android.widget.Toast;
-
-import jedi.functional.Command;
 
 /**
  * Created by laurent on 1/20/17.
@@ -51,37 +46,6 @@ public class BookView extends ScrollView  {
         }
 
     }
-//
-//    @Override
-//    public boolean onInterceptTouchEvent(MotionEvent event) {
-//        switch(event.getAction())
-//        {
-//            case MotionEvent.ACTION_DOWN:
-//                x1 = event.getX();
-//                break;
-//            case MotionEvent.ACTION_UP:
-//                x2 = event.getX();
-//                float deltaX = x2 - x1;
-//                if (Math.abs(deltaX) > MIN_DISTANCE)
-//                {
-//                    if(deltaX > 0) {
-//                        Log.d("swipe","right");
-//                        return super.onInterceptTouchEvent(event);
-//                    } else {
-//                        Log.d("swipe","left");
-//                        return super.onInterceptTouchEvent(event);
-//                    }
-//
-//                }
-//                else
-//                {
-//                    // consider as something else - a screen tap for example
-//                }
-//                break;
-//        }
-//        return false;
-//
-//    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event)
@@ -121,57 +85,13 @@ public class BookView extends ScrollView  {
 
                 diffX = endX - startX;
                 diffY = endY - startY;
-
-//                    int visibleTextHeight = this.getHeight();
-//                    if(diffX != 0) {
-//                        //this.pageScroll(View.FOCUS_UP);
-//                        this.scrollTo(0, getScrollY() - visibleTextHeight);
-//                    } else {
-//                        //this.pageScroll(View.FOCUS_DOWN);
-//                        //this.scrollTo(0, getScrollY() + visibleTextHeight);
-//                    }
-
                 break;
             case MotionEvent.ACTION_POINTER_UP:
 
                 break;
         }
 
-
         return true;
-
-//        horizontalSwipe = false;
-//        switch(event.getAction())
-//        {
-//            case MotionEvent.ACTION_DOWN:
-//                x1 = event.getX();
-//                y1 = event.getY();
-//                break;
-//            case MotionEvent.ACTION_UP:
-//                x2 = event.getX();
-//                y2 = event.getY();
-//                float deltaX = x2 - x1;
-//                if (Math.abs(deltaX) > MIN_DISTANCE)
-//                {
-//                    if(deltaX > 0) {
-//                        // Swipe right
-//                        this.scrollTo(0,150);
-//                        horizontalSwipe = true;
-//                        Log.d("swipe","right");
-//                    } else {
-//                        // Swipe left
-//                        horizontalSwipe = true;
-//                        Log.d("swipe","left");
-//                    }
-//
-//                }
-//                else
-//                {
-//                    // consider as something else - a screen tap for example
-//                }
-//                break;
-//        }
-//        return super.onTouchEvent(event);
     }
 
 }
