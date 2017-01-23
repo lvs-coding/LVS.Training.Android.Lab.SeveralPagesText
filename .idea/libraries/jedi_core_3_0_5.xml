@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jedi-core-3.0.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jedi/jedi-core/3.0.5/e0aa551ffa9e6d0a1a75b54436cf61f66a92cb6b/jedi-core-3.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jedi/jedi-core/3.0.5/a21e65b522c71979026df712e6f03ab6a3957e4c/jedi-core-3.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
